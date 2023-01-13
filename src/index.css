@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "col";
+  src: local("col"), url("./fonts/col.woff") format("woff");
+}
+@font-face {
+  font-family: "hel";
+  src: local("hel"), url("./fonts/hel.otf") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: 300 11px/1.4;
+  color: #64e1da;
+  background-color: #121a2d;
+  display: block;
+  overflow: hidden;
+}
+leaflet-container {
+  width: 100vw;
+  height: 100vh;
+}
+@media (max-width: 765px) {
+  body {
+    overflow: scroll;
+  }
+}

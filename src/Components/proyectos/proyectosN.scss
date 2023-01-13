@@ -1,0 +1,158 @@
+.proyectosCont {
+  height: 70%;
+  width: 90vw;
+  margin-left: 80px;
+  min-height: 366px;
+  position: absolute;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+  font-family: sans-serif;
+  margin-top: 150px;
+
+  .proyectos {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+      font-family: sans-serif;
+      font-size: 25px;
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+
+      button {
+        background-color: transparent;
+        font-size: 12px;
+        color: #64e1da;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        padding: 10px;
+        border: 1px solid #64e1da;
+        margin-top: 10px;
+        float: left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          background-color: #64e1da;
+          color: #121a2d;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+  .vista {
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #64e1da;
+    font-family: sans-serif;
+    img {
+      width: 50%;
+      border-radius: 15px;
+      filter: drop-shadow(-6px -3px 30px #64e1da);
+      margin-top: 40px;
+      cursor: pointer;
+      transition: 1s;
+      &:hover {
+        filter: drop-shadow(-6px -3px 45px #ccd6f6);
+      }
+    }
+
+    .contTitulo {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    h3 {
+      font-family: "col";
+      margin: 0;
+      padding: 0;
+      color: #ccd6f6;
+    }
+  }
+  .contLogoProyecto {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ccd6f6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  .proyectosLogo {
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 765px) {
+  .proyectosCont {
+    height: 100%;
+    width: 100vw;
+    margin-left: 0px;
+    min-height: 366px;
+    position: absolute;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    font-family: sans-serif;
+    margin-top: 150px;
+    .proyectos {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    ul {
+      width: 100%;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      div {
+        margin-top: 10px;
+      }
+    }
+    .vista {
+      width: 100%;
+      height: 50%;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: #64e1da;
+      font-family: sans-serif;
+      margin-top: 150px;
+      img {
+        width: 80%;
+        border-radius: 15px;
+        filter: drop-shadow(-6px -3px 30px #64e1da);
+        margin-top: 40px;
+        cursor: pointer;
+        transition: 1s;
+        &:hover {
+          filter: drop-shadow(-6px -3px 45px #ccd6f6);
+        }
+      }
+    }
+  }
+}

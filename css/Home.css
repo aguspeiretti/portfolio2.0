@@ -1,0 +1,72 @@
+.contenedorPrincipal {
+  height: 100vh;
+  width: 100vw;
+  margin-left: 80px;
+  min-height: 566px;
+  position: absolute;
+  top: 5%;
+  z-index: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.contenedorPrincipal .texto {
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50%;
+  max-height: 90%;
+}
+
+.contenedorPrincipal .texto h1 {
+  color: #ccd6f6;
+  font-size: 63px;
+  margin: 0;
+  font-family: "Coolvetica";
+  font-weight: 500;
+  letter-spacing: 3.6px;
+  -webkit-animation: fadeIn 1s 1.7s backwards;
+          animation: fadeIn 1s 1.7s backwards;
+}
+
+.contenedorPrincipal .texto h2 {
+  color: #ffffff;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  -webkit-animation: fadeIn 1s 1.8s backwards;
+          animation: fadeIn 1s 1.8s backwards;
+}
+
+.contenedorPrincipal .texto button {
+  background-color: transparent;
+  font-size: 15px;
+  color: #64e1da;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  padding: 10px 18px;
+  border: 1px solid #64e1da;
+  margin-top: 30px;
+  float: left;
+  -webkit-animation: fadeIn 1s 1.8s backwards;
+          animation: fadeIn 1s 1.8s backwards;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.contenedorPrincipal .texto button:hover {
+  background-color: #64e1da;
+  color: #121a2d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=Home.css.map */

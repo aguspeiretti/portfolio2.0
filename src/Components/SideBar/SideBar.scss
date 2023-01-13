@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url("../../Assets/fonts/CoolveticaRg-Regular.woff2") format("woff2");
+}
+
+.navBar {
+  background-color: #121a2d;
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pdf {
+  font-size: 25px;
+  font-weight: 200;
+  color: #64e1da;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.pdf a {
+  color: #64e1da;
+}
+.pdf a:hover {
+  filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
+  color: #fff;
+}
+.pdf span {
+  font-family: "col";
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  font-weight: 200;
+}
+
+.Links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  font-family: "col";
+}
+.Links i {
+  padding-top: 25px;
+  font-size: 20px;
+}
+.Links i:hover {
+  filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
+  color: #fff;
+}
+.Links div {
+  position: relative;
+}
+.Links span {
+  color: #fff;
+  position: absolute;
+  top: 28px;
+  bottom: 0;
+  right: 0;
+  left: 30px;
+  font-family: "col";
+  font-size: 14px;
+  font-weight: 200;
+  visibility: hidden;
+  letter-spacing: 1.4px;
+}
+.Links div:hover span {
+  visibility: visible;
+  filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
+  color: #fff;
+}
+.Links a {
+  color: #64e1da;
+}
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.redes i {
+  padding-top: 25px;
+  font-size: 20px;
+}
+.redes a {
+  color: #64e1da;
+  position: relative;
+}
+
+.redes a:hover {
+  filter: drop-shadow(5px 5px 10px rgb(255, 255, 255));
+  color: #fff;
+}
+.redes span {
+  color: #fff;
+  position: absolute;
+  top: 28px;
+  bottom: 0;
+  right: 0;
+  left: 30px;
+  font-family: "col";
+  font-size: 14px;
+  font-weight: 200;
+  visibility: hidden;
+  letter-spacing: 1.4px;
+}
+.redes a:hover span {
+  visibility: visible;
+}
+.navBar-responsive {
+  display: none;
+}
+@media (max-width: 765px) {
+  .navBar {
+    display: none;
+  }
+  .navBar-responsive {
+    display: block;
+    width: 100vw;
+    .Links-responsive {
+      display: flex;
+      justify-content: space-around;
+      font-family: "col";
+      margin-top: 20px;
+      a {
+        text-decoration: none;
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: #64e1da;
+          i {
+            font-size: 18px;
+          }
+          span {
+            font-family: "col";
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}

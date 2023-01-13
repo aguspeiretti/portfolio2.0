@@ -1,0 +1,49 @@
+.aboutContainer {
+  height: 100vh;
+  width: 90vw;
+  margin-left: 80px;
+  min-height: 566px;
+  position: absolute;
+  top: 5%;
+  z-index: 1;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  background-color: #121a2d;
+}
+
+.aboutContainer .texto {
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40%;
+  max-height: 90%;
+}
+
+.aboutContainer .texto h1 {
+  color: #ccd6f6;
+  font-size: 63px;
+  margin: 0;
+  font-family: "Coolvetica";
+  font-weight: 500;
+  letter-spacing: 3.6px;
+  -webkit-animation: fadeIn 1s 1.7s backwards;
+          animation: fadeIn 1s 1.7s backwards;
+}
+
+.aboutContainer .texto p {
+  color: #ffffff;
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  -webkit-animation: fadeIn 1s 1.8s backwards;
+          animation: fadeIn 1s 1.8s backwards;
+}
+/*# sourceMappingURL=About.css.map */
